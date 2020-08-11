@@ -29,3 +29,7 @@ application-ut-local.properties
 admin/frontend/yarn.lock
 admin/src/test/generatedContract
 admin/src/main/resources/config-cache/
+/gradle/wrapper/gradle-wrapper.jar
+/gradle/wrapper/gradle-wrapper.properties
+/gradlew
+/gradlew.bat
