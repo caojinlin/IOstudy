@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'com.netty'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile (
+            'io.netty:netty-all:4.1.15.Final',
+            'com.google.protobuf:protobuf-java:3.6.1',
+            'com.google.protobuf: protobuf-java-util:3.6.1'
+    )
+    testCompile (
+        "junit:junit:4.12"
+    )
+}
