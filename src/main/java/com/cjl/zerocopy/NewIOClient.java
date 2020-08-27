@@ -11,7 +11,7 @@ public class NewIOClient {
         SocketChannel socketChannel = SocketChannel.open();
         socketChannel.connect(new InetSocketAddress("localhost", 8899));
         socketChannel.configureBlocking(true);
-        String fileName = "/Users/caojinlin/cjl/码农翻身/0.单元测试.mp4";
+        String fileName = "/Users/caojinlin/cjl/baiduyun/Netty权威指南.pdf";
         FileChannel fileChannel = new FileInputStream(fileName).getChannel();
         long startTime = System.currentTimeMillis();
         long transferCount = fileChannel.transferTo(0, fileChannel.size(), socketChannel);

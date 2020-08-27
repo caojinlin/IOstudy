@@ -10,9 +10,14 @@ public class TestServerHandler extends SimpleChannelInboundHandler<MyDataInfo.My
         switch (msg.getDataType()){
             case PersonType:
                 System.out.println(msg.getPerson());
+                System.out.println(msg.getPerson().getAddress());
+                System.out.println(msg.getPerson().getName());
+                System.out.println(msg.getPerson().getAge());
                 break;
             case DogType:
                 System.out.println(msg.getDog());
+                System.out.println(msg.getDog().getCity());
+                System.out.println(msg.getDog().getName());
                 break;
             case CatType:
                 System.out.println(msg.getCat());

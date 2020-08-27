@@ -1,6 +1,5 @@
 package com.cjl.netty.sixthexample;
 
-import com.cjl.netty.secondexample.MyServerInitializer;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.EventLoopGroup;

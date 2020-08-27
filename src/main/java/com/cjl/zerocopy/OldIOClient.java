@@ -8,7 +8,7 @@ public class OldIOClient {
 
     public static void main(String[] args) throws Exception{
         Socket socket = new Socket("localhost", 8899);
-        String fileName = "/Users/caojinlin/cjl/码农翻身/0.单元测试.mp4";
+        String fileName = "/Users/caojinlin/cjl/baiduyun/Netty权威指南.pdf";
         FileInputStream fileInputStream = new FileInputStream(fileName);
         DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
         byte[] buffer = new byte[4096];
