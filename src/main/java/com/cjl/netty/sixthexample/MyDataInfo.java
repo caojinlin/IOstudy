@@ -20,19 +20,23 @@ public final class MyDataInfo {
 
     /**
      * <code>required .com.cjl.protobuf.MyMessage.DataType data_type = 1;</code>
+     * @return Whether the dataType field is set.
      */
     boolean hasDataType();
     /**
      * <code>required .com.cjl.protobuf.MyMessage.DataType data_type = 1;</code>
+     * @return The dataType.
      */
     com.cjl.netty.sixthexample.MyDataInfo.MyMessage.DataType getDataType();
 
     /**
      * <code>optional .com.cjl.protobuf.Person person = 2;</code>
+     * @return Whether the person field is set.
      */
     boolean hasPerson();
     /**
      * <code>optional .com.cjl.protobuf.Person person = 2;</code>
+     * @return The person.
      */
     com.cjl.netty.sixthexample.MyDataInfo.Person getPerson();
     /**
@@ -42,10 +46,12 @@ public final class MyDataInfo {
 
     /**
      * <code>optional .com.cjl.protobuf.Dog dog = 3;</code>
+     * @return Whether the dog field is set.
      */
     boolean hasDog();
     /**
      * <code>optional .com.cjl.protobuf.Dog dog = 3;</code>
+     * @return The dog.
      */
     com.cjl.netty.sixthexample.MyDataInfo.Dog getDog();
     /**
@@ -55,10 +61,12 @@ public final class MyDataInfo {
 
     /**
      * <code>optional .com.cjl.protobuf.Cat cat = 4;</code>
+     * @return Whether the cat field is set.
      */
     boolean hasCat();
     /**
      * <code>optional .com.cjl.protobuf.Cat cat = 4;</code>
+     * @return The cat.
      */
     com.cjl.netty.sixthexample.MyDataInfo.Cat getCat();
     /**
@@ -82,6 +90,13 @@ public final class MyDataInfo {
     }
     private MyMessage() {
       dataType_ = 1;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new MyMessage();
     }
 
     @java.lang.Override
@@ -232,6 +247,8 @@ public final class MyDataInfo {
       }
 
       /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -239,6 +256,10 @@ public final class MyDataInfo {
         return forNumber(value);
       }
 
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
       public static DataType forNumber(int value) {
         switch (value) {
           case 1: return PersonType;
@@ -297,7 +318,8 @@ public final class MyDataInfo {
     private int dataBodyCase_ = 0;
     private java.lang.Object dataBody_;
     public enum DataBodyCase
-        implements com.google.protobuf.Internal.EnumLite {
+        implements com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
       PERSON(2),
       DOG(3),
       CAT(4),
@@ -307,6 +329,8 @@ public final class MyDataInfo {
         this.value = value;
       }
       /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
@@ -338,12 +362,14 @@ public final class MyDataInfo {
     private int dataType_;
     /**
      * <code>required .com.cjl.protobuf.MyMessage.DataType data_type = 1;</code>
+     * @return Whether the dataType field is set.
      */
     public boolean hasDataType() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>required .com.cjl.protobuf.MyMessage.DataType data_type = 1;</code>
+     * @return The dataType.
      */
     public com.cjl.netty.sixthexample.MyDataInfo.MyMessage.DataType getDataType() {
       @SuppressWarnings("deprecation")
@@ -354,12 +380,14 @@ public final class MyDataInfo {
     public static final int PERSON_FIELD_NUMBER = 2;
     /**
      * <code>optional .com.cjl.protobuf.Person person = 2;</code>
+     * @return Whether the person field is set.
      */
     public boolean hasPerson() {
       return dataBodyCase_ == 2;
     }
     /**
      * <code>optional .com.cjl.protobuf.Person person = 2;</code>
+     * @return The person.
      */
     public com.cjl.netty.sixthexample.MyDataInfo.Person getPerson() {
       if (dataBodyCase_ == 2) {
@@ -380,12 +408,14 @@ public final class MyDataInfo {
     public static final int DOG_FIELD_NUMBER = 3;
     /**
      * <code>optional .com.cjl.protobuf.Dog dog = 3;</code>
+     * @return Whether the dog field is set.
      */
     public boolean hasDog() {
       return dataBodyCase_ == 3;
     }
     /**
      * <code>optional .com.cjl.protobuf.Dog dog = 3;</code>
+     * @return The dog.
      */
     public com.cjl.netty.sixthexample.MyDataInfo.Dog getDog() {
       if (dataBodyCase_ == 3) {
@@ -406,12 +436,14 @@ public final class MyDataInfo {
     public static final int CAT_FIELD_NUMBER = 4;
     /**
      * <code>optional .com.cjl.protobuf.Cat cat = 4;</code>
+     * @return Whether the cat field is set.
      */
     public boolean hasCat() {
       return dataBodyCase_ == 4;
     }
     /**
      * <code>optional .com.cjl.protobuf.Cat cat = 4;</code>
+     * @return The cat.
      */
     public com.cjl.netty.sixthexample.MyDataInfo.Cat getCat() {
       if (dataBodyCase_ == 4) {
@@ -862,12 +894,14 @@ public final class MyDataInfo {
       private int dataType_ = 1;
       /**
        * <code>required .com.cjl.protobuf.MyMessage.DataType data_type = 1;</code>
+       * @return Whether the dataType field is set.
        */
       public boolean hasDataType() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>required .com.cjl.protobuf.MyMessage.DataType data_type = 1;</code>
+       * @return The dataType.
        */
       public com.cjl.netty.sixthexample.MyDataInfo.MyMessage.DataType getDataType() {
         @SuppressWarnings("deprecation")
@@ -876,6 +910,8 @@ public final class MyDataInfo {
       }
       /**
        * <code>required .com.cjl.protobuf.MyMessage.DataType data_type = 1;</code>
+       * @param value The dataType to set.
+       * @return This builder for chaining.
        */
       public Builder setDataType(com.cjl.netty.sixthexample.MyDataInfo.MyMessage.DataType value) {
         if (value == null) {
@@ -888,6 +924,7 @@ public final class MyDataInfo {
       }
       /**
        * <code>required .com.cjl.protobuf.MyMessage.DataType data_type = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearDataType() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -900,12 +937,14 @@ public final class MyDataInfo {
           com.cjl.netty.sixthexample.MyDataInfo.Person, com.cjl.netty.sixthexample.MyDataInfo.Person.Builder, com.cjl.netty.sixthexample.MyDataInfo.PersonOrBuilder> personBuilder_;
       /**
        * <code>optional .com.cjl.protobuf.Person person = 2;</code>
+       * @return Whether the person field is set.
        */
       public boolean hasPerson() {
         return dataBodyCase_ == 2;
       }
       /**
        * <code>optional .com.cjl.protobuf.Person person = 2;</code>
+       * @return The person.
        */
       public com.cjl.netty.sixthexample.MyDataInfo.Person getPerson() {
         if (personBuilder_ == null) {
@@ -1036,12 +1075,14 @@ public final class MyDataInfo {
           com.cjl.netty.sixthexample.MyDataInfo.Dog, com.cjl.netty.sixthexample.MyDataInfo.Dog.Builder, com.cjl.netty.sixthexample.MyDataInfo.DogOrBuilder> dogBuilder_;
       /**
        * <code>optional .com.cjl.protobuf.Dog dog = 3;</code>
+       * @return Whether the dog field is set.
        */
       public boolean hasDog() {
         return dataBodyCase_ == 3;
       }
       /**
        * <code>optional .com.cjl.protobuf.Dog dog = 3;</code>
+       * @return The dog.
        */
       public com.cjl.netty.sixthexample.MyDataInfo.Dog getDog() {
         if (dogBuilder_ == null) {
@@ -1172,12 +1213,14 @@ public final class MyDataInfo {
           com.cjl.netty.sixthexample.MyDataInfo.Cat, com.cjl.netty.sixthexample.MyDataInfo.Cat.Builder, com.cjl.netty.sixthexample.MyDataInfo.CatOrBuilder> catBuilder_;
       /**
        * <code>optional .com.cjl.protobuf.Cat cat = 4;</code>
+       * @return Whether the cat field is set.
        */
       public boolean hasCat() {
         return dataBodyCase_ == 4;
       }
       /**
        * <code>optional .com.cjl.protobuf.Cat cat = 4;</code>
+       * @return The cat.
        */
       public com.cjl.netty.sixthexample.MyDataInfo.Cat getCat() {
         if (catBuilder_ == null) {
@@ -1362,37 +1405,45 @@ public final class MyDataInfo {
 
     /**
      * <code>optional string name = 1;</code>
+     * @return Whether the name field is set.
      */
     boolean hasName();
     /**
      * <code>optional string name = 1;</code>
+     * @return The name.
      */
     java.lang.String getName();
     /**
      * <code>optional string name = 1;</code>
+     * @return The bytes for name.
      */
     com.google.protobuf.ByteString
         getNameBytes();
 
     /**
      * <code>optional int32 age = 2;</code>
+     * @return Whether the age field is set.
      */
     boolean hasAge();
     /**
      * <code>optional int32 age = 2;</code>
+     * @return The age.
      */
     int getAge();
 
     /**
      * <code>optional string address = 3;</code>
+     * @return Whether the address field is set.
      */
     boolean hasAddress();
     /**
      * <code>optional string address = 3;</code>
+     * @return The address.
      */
     java.lang.String getAddress();
     /**
      * <code>optional string address = 3;</code>
+     * @return The bytes for address.
      */
     com.google.protobuf.ByteString
         getAddressBytes();
@@ -1412,6 +1463,13 @@ public final class MyDataInfo {
     private Person() {
       name_ = "";
       address_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new Person();
     }
 
     @java.lang.Override
@@ -1492,12 +1550,14 @@ public final class MyDataInfo {
     private volatile java.lang.Object name_;
     /**
      * <code>optional string name = 1;</code>
+     * @return Whether the name field is set.
      */
     public boolean hasName() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>optional string name = 1;</code>
+     * @return The name.
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -1515,6 +1575,7 @@ public final class MyDataInfo {
     }
     /**
      * <code>optional string name = 1;</code>
+     * @return The bytes for name.
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -1534,12 +1595,14 @@ public final class MyDataInfo {
     private int age_;
     /**
      * <code>optional int32 age = 2;</code>
+     * @return Whether the age field is set.
      */
     public boolean hasAge() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>optional int32 age = 2;</code>
+     * @return The age.
      */
     public int getAge() {
       return age_;
@@ -1549,12 +1612,14 @@ public final class MyDataInfo {
     private volatile java.lang.Object address_;
     /**
      * <code>optional string address = 3;</code>
+     * @return Whether the address field is set.
      */
     public boolean hasAddress() {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
      * <code>optional string address = 3;</code>
+     * @return The address.
      */
     public java.lang.String getAddress() {
       java.lang.Object ref = address_;
@@ -1572,6 +1637,7 @@ public final class MyDataInfo {
     }
     /**
      * <code>optional string address = 3;</code>
+     * @return The bytes for address.
      */
     public com.google.protobuf.ByteString
         getAddressBytes() {
@@ -1956,12 +2022,14 @@ public final class MyDataInfo {
       private java.lang.Object name_ = "";
       /**
        * <code>optional string name = 1;</code>
+       * @return Whether the name field is set.
        */
       public boolean hasName() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>optional string name = 1;</code>
+       * @return The name.
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -1979,6 +2047,7 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string name = 1;</code>
+       * @return The bytes for name.
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -1995,6 +2064,8 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string name = 1;</code>
+       * @param value The name to set.
+       * @return This builder for chaining.
        */
       public Builder setName(
           java.lang.String value) {
@@ -2008,6 +2079,7 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string name = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearName() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -2017,6 +2089,8 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string name = 1;</code>
+       * @param value The bytes for name to set.
+       * @return This builder for chaining.
        */
       public Builder setNameBytes(
           com.google.protobuf.ByteString value) {
@@ -2032,18 +2106,22 @@ public final class MyDataInfo {
       private int age_ ;
       /**
        * <code>optional int32 age = 2;</code>
+       * @return Whether the age field is set.
        */
       public boolean hasAge() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>optional int32 age = 2;</code>
+       * @return The age.
        */
       public int getAge() {
         return age_;
       }
       /**
        * <code>optional int32 age = 2;</code>
+       * @param value The age to set.
+       * @return This builder for chaining.
        */
       public Builder setAge(int value) {
         bitField0_ |= 0x00000002;
@@ -2053,6 +2131,7 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional int32 age = 2;</code>
+       * @return This builder for chaining.
        */
       public Builder clearAge() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -2064,12 +2143,14 @@ public final class MyDataInfo {
       private java.lang.Object address_ = "";
       /**
        * <code>optional string address = 3;</code>
+       * @return Whether the address field is set.
        */
       public boolean hasAddress() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>optional string address = 3;</code>
+       * @return The address.
        */
       public java.lang.String getAddress() {
         java.lang.Object ref = address_;
@@ -2087,6 +2168,7 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string address = 3;</code>
+       * @return The bytes for address.
        */
       public com.google.protobuf.ByteString
           getAddressBytes() {
@@ -2103,6 +2185,8 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string address = 3;</code>
+       * @param value The address to set.
+       * @return This builder for chaining.
        */
       public Builder setAddress(
           java.lang.String value) {
@@ -2116,6 +2200,7 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string address = 3;</code>
+       * @return This builder for chaining.
        */
       public Builder clearAddress() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -2125,6 +2210,8 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string address = 3;</code>
+       * @param value The bytes for address to set.
+       * @return This builder for chaining.
        */
       public Builder setAddressBytes(
           com.google.protobuf.ByteString value) {
@@ -2195,28 +2282,34 @@ public final class MyDataInfo {
 
     /**
      * <code>optional string name = 1;</code>
+     * @return Whether the name field is set.
      */
     boolean hasName();
     /**
      * <code>optional string name = 1;</code>
+     * @return The name.
      */
     java.lang.String getName();
     /**
      * <code>optional string name = 1;</code>
+     * @return The bytes for name.
      */
     com.google.protobuf.ByteString
         getNameBytes();
 
     /**
      * <code>optional string city = 2;</code>
+     * @return Whether the city field is set.
      */
     boolean hasCity();
     /**
      * <code>optional string city = 2;</code>
+     * @return The city.
      */
     java.lang.String getCity();
     /**
      * <code>optional string city = 2;</code>
+     * @return The bytes for city.
      */
     com.google.protobuf.ByteString
         getCityBytes();
@@ -2236,6 +2329,13 @@ public final class MyDataInfo {
     private Dog() {
       name_ = "";
       city_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new Dog();
     }
 
     @java.lang.Override
@@ -2311,12 +2411,14 @@ public final class MyDataInfo {
     private volatile java.lang.Object name_;
     /**
      * <code>optional string name = 1;</code>
+     * @return Whether the name field is set.
      */
     public boolean hasName() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>optional string name = 1;</code>
+     * @return The name.
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -2334,6 +2436,7 @@ public final class MyDataInfo {
     }
     /**
      * <code>optional string name = 1;</code>
+     * @return The bytes for name.
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -2353,12 +2456,14 @@ public final class MyDataInfo {
     private volatile java.lang.Object city_;
     /**
      * <code>optional string city = 2;</code>
+     * @return Whether the city field is set.
      */
     public boolean hasCity() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>optional string city = 2;</code>
+     * @return The city.
      */
     public java.lang.String getCity() {
       java.lang.Object ref = city_;
@@ -2376,6 +2481,7 @@ public final class MyDataInfo {
     }
     /**
      * <code>optional string city = 2;</code>
+     * @return The bytes for city.
      */
     public com.google.protobuf.ByteString
         getCityBytes() {
@@ -2735,12 +2841,14 @@ public final class MyDataInfo {
       private java.lang.Object name_ = "";
       /**
        * <code>optional string name = 1;</code>
+       * @return Whether the name field is set.
        */
       public boolean hasName() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>optional string name = 1;</code>
+       * @return The name.
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -2758,6 +2866,7 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string name = 1;</code>
+       * @return The bytes for name.
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -2774,6 +2883,8 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string name = 1;</code>
+       * @param value The name to set.
+       * @return This builder for chaining.
        */
       public Builder setName(
           java.lang.String value) {
@@ -2787,6 +2898,7 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string name = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearName() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -2796,6 +2908,8 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string name = 1;</code>
+       * @param value The bytes for name to set.
+       * @return This builder for chaining.
        */
       public Builder setNameBytes(
           com.google.protobuf.ByteString value) {
@@ -2811,12 +2925,14 @@ public final class MyDataInfo {
       private java.lang.Object city_ = "";
       /**
        * <code>optional string city = 2;</code>
+       * @return Whether the city field is set.
        */
       public boolean hasCity() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>optional string city = 2;</code>
+       * @return The city.
        */
       public java.lang.String getCity() {
         java.lang.Object ref = city_;
@@ -2834,6 +2950,7 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string city = 2;</code>
+       * @return The bytes for city.
        */
       public com.google.protobuf.ByteString
           getCityBytes() {
@@ -2850,6 +2967,8 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string city = 2;</code>
+       * @param value The city to set.
+       * @return This builder for chaining.
        */
       public Builder setCity(
           java.lang.String value) {
@@ -2863,6 +2982,7 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string city = 2;</code>
+       * @return This builder for chaining.
        */
       public Builder clearCity() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -2872,6 +2992,8 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string city = 2;</code>
+       * @param value The bytes for city to set.
+       * @return This builder for chaining.
        */
       public Builder setCityBytes(
           com.google.protobuf.ByteString value) {
@@ -2942,28 +3064,34 @@ public final class MyDataInfo {
 
     /**
      * <code>optional string name = 1;</code>
+     * @return Whether the name field is set.
      */
     boolean hasName();
     /**
      * <code>optional string name = 1;</code>
+     * @return The name.
      */
     java.lang.String getName();
     /**
      * <code>optional string name = 1;</code>
+     * @return The bytes for name.
      */
     com.google.protobuf.ByteString
         getNameBytes();
 
     /**
      * <code>optional string age = 2;</code>
+     * @return Whether the age field is set.
      */
     boolean hasAge();
     /**
      * <code>optional string age = 2;</code>
+     * @return The age.
      */
     java.lang.String getAge();
     /**
      * <code>optional string age = 2;</code>
+     * @return The bytes for age.
      */
     com.google.protobuf.ByteString
         getAgeBytes();
@@ -2983,6 +3111,13 @@ public final class MyDataInfo {
     private Cat() {
       name_ = "";
       age_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new Cat();
     }
 
     @java.lang.Override
@@ -3058,12 +3193,14 @@ public final class MyDataInfo {
     private volatile java.lang.Object name_;
     /**
      * <code>optional string name = 1;</code>
+     * @return Whether the name field is set.
      */
     public boolean hasName() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
      * <code>optional string name = 1;</code>
+     * @return The name.
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -3081,6 +3218,7 @@ public final class MyDataInfo {
     }
     /**
      * <code>optional string name = 1;</code>
+     * @return The bytes for name.
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -3100,12 +3238,14 @@ public final class MyDataInfo {
     private volatile java.lang.Object age_;
     /**
      * <code>optional string age = 2;</code>
+     * @return Whether the age field is set.
      */
     public boolean hasAge() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
      * <code>optional string age = 2;</code>
+     * @return The age.
      */
     public java.lang.String getAge() {
       java.lang.Object ref = age_;
@@ -3123,6 +3263,7 @@ public final class MyDataInfo {
     }
     /**
      * <code>optional string age = 2;</code>
+     * @return The bytes for age.
      */
     public com.google.protobuf.ByteString
         getAgeBytes() {
@@ -3482,12 +3623,14 @@ public final class MyDataInfo {
       private java.lang.Object name_ = "";
       /**
        * <code>optional string name = 1;</code>
+       * @return Whether the name field is set.
        */
       public boolean hasName() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>optional string name = 1;</code>
+       * @return The name.
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -3505,6 +3648,7 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string name = 1;</code>
+       * @return The bytes for name.
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -3521,6 +3665,8 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string name = 1;</code>
+       * @param value The name to set.
+       * @return This builder for chaining.
        */
       public Builder setName(
           java.lang.String value) {
@@ -3534,6 +3680,7 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string name = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearName() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -3543,6 +3690,8 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string name = 1;</code>
+       * @param value The bytes for name to set.
+       * @return This builder for chaining.
        */
       public Builder setNameBytes(
           com.google.protobuf.ByteString value) {
@@ -3558,12 +3707,14 @@ public final class MyDataInfo {
       private java.lang.Object age_ = "";
       /**
        * <code>optional string age = 2;</code>
+       * @return Whether the age field is set.
        */
       public boolean hasAge() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
        * <code>optional string age = 2;</code>
+       * @return The age.
        */
       public java.lang.String getAge() {
         java.lang.Object ref = age_;
@@ -3581,6 +3732,7 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string age = 2;</code>
+       * @return The bytes for age.
        */
       public com.google.protobuf.ByteString
           getAgeBytes() {
@@ -3597,6 +3749,8 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string age = 2;</code>
+       * @param value The age to set.
+       * @return This builder for chaining.
        */
       public Builder setAge(
           java.lang.String value) {
@@ -3610,6 +3764,7 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string age = 2;</code>
+       * @return This builder for chaining.
        */
       public Builder clearAge() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -3619,6 +3774,8 @@ public final class MyDataInfo {
       }
       /**
        * <code>optional string age = 2;</code>
+       * @param value The bytes for age to set.
+       * @return This builder for chaining.
        */
       public Builder setAgeBytes(
           com.google.protobuf.ByteString value) {
@@ -3725,18 +3882,10 @@ public final class MyDataInfo {
       "\n\004name\030\001 \001(\t\022\013\n\003age\030\002 \001(\tB*\n\032com.cjl.net" +
       "ty.sixthexampleB\nMyDataInfoH\001"
     };
-    com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
-          public com.google.protobuf.ExtensionRegistry assignDescriptors(
-              com.google.protobuf.Descriptors.FileDescriptor root) {
-            descriptor = root;
-            return null;
-          }
-        };
-    com.google.protobuf.Descriptors.FileDescriptor
+    descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-        }, assigner);
+        });
     internal_static_com_cjl_protobuf_MyMessage_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_com_cjl_protobuf_MyMessage_fieldAccessorTable = new
